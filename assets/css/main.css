@@ -81,6 +81,11 @@ body {
     position: relative;
 }
 
+@media(max-width:1024px){
+  body{
+    padding-top: 6rem;
+  }
+}
 .not_found_container{
   width: 100%;
   min-height: 30rem;
