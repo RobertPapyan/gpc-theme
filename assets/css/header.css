@@ -113,16 +113,17 @@
         font-size: 2rem;
     }
     .header{
-        position: sticky;
+        position: fixed;
         background-color: #fff;
         top: 0;
         z-index: 40;
+        width: 100%;
     }
     .header .header_item{
         z-index: 20;
     }
     .header_mobile_nav{
-        position: absolute;
+        position: fixed;
         background-color: #fff;
         width: 100%;
         position: fixed;
