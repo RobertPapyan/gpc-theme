@@ -536,16 +536,6 @@ $wp_customize->add_section('category',array(
 ));
 
 
-$wp_customize->add_setting('projectsSubtitle',array(
-	'default'=>__('Below are some of the Goris Press Club’s ongoing and completed projects.')
-));
-$wp_customize->add_control('projectsSubtitle',array(
-	'label'=>'Subtitle for projects category page',
-	'section'=>'category',
-	'priority'=>1,
-	'type'=>'text'
-));
-
 $wp_customize->add_setting('readMoreButton',array(
 	'default'=>__('Read more')
 ));

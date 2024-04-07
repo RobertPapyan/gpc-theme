@@ -19,7 +19,7 @@ get_header();
 				add_filter('get_the_archive_title_prefix','__return_false');
 				?>
 				<h1 class="projects_title"><?php echo get_the_archive_title(); ?></h1>
-                <h3 class="projects_subtitle"><?php echo get_theme_mod('projectsSubtitle')?></h3>
+                <h3 class="projects_subtitle"><?php echo get_the_archive_description();?></h3>
 			</div>
 			<div class="projects_items_container">
 				
