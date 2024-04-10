@@ -81,6 +81,12 @@ body {
     position: relative;
 }
 
+p {
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 @media(max-width:1024px){
   body{
     padding-top: 6rem;
