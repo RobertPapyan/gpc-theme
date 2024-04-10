@@ -144,7 +144,14 @@ $wp_customize->add_control('value4text',array(
 	'priority'=>1,
 	'type'=>'text'
 ));
-
+$wp_customize->add_setting('ourValuesBgImage',array(
+	'default'=> get_bloginfo('template_url') . '/assets/images/ourvalues_bg.png'
+));
+$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'ourValuesBgImage',array(
+	'label'=>'Our values section background image',
+	'section'=>'ourValues',
+	'priority'=>1
+)));
 //Posts slider
 
 $wp_customize->add_section('postsSlider',array(

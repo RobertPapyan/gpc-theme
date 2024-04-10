@@ -49,9 +49,9 @@
 
 					<h4><?php echo get_theme_mod('footerOnSocialMedia') ?></h4>
 					<div class="footer_social_icons_container">
-					<a href="<?php echo get_theme_mod('footerInstagramUrl') ?>"><i class="fa-brands fa-square-instagram"></i></a>
-					<a href="<?php echo get_theme_mod('footerFaceBookUrl') ?>"><i class="fa-brands fa-square-facebook"></i></a>
-					<a href="<?php echo get_theme_mod('footerYoutubeUrl') ?>"><i class="fa-brands fa-square-youtube"></i></a>
+					<a href="<?php echo get_theme_mod('footerInstagramUrl') ?>" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+					<a href="<?php echo get_theme_mod('footerFaceBookUrl') ?>"  target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+					<a href="<?php echo get_theme_mod('footerYoutubeUrl') ?>"   target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
 					</div>
 				</div>
 			</div>

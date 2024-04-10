@@ -11,7 +11,7 @@
 <section class="ourValues_section">
     <div class="ourValues_container">
         <h2 class="ourValues_h2"><?php echo get_theme_mod('ourValuesTitle')?></h2>
-        <div class="ourValues_main">
+        <div class="ourValues_main" style="background-image: url(<?php echo get_theme_mod('ourValuesBgImage') ?>)">
             <div class="ourValues_blur">
                 <div class="ourValues_f1">
                     <div class="ourValues_f_item">

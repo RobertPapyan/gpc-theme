@@ -30,7 +30,7 @@ get_header();
 				<div class="projects_item">
                     <h3 class="projects_item_title"><?php the_title(); ?></h3>
                     <div class="projects_item_flex">
-					    <div class="projects_item_img"><div class="projects_item_img_cover"></div><?php the_post_thumbnail();?></div>
+					    <div class="projects_item_img"><?php the_post_thumbnail();?></div>
                         <div class="projects_item_excerpt"><p><?php the_excerpt(); ?></p></div>
 					</div>
                     <div class="projects_item_flex2">

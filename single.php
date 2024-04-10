@@ -20,8 +20,7 @@ get_header();
 				<div class="single_hero_background_color">
     			<div class="single_hero_container">
        				<h1 class="single_hero_h1"><?php the_title(); ?></h1>
-        			<div class="single_hero_separator"></div>
-        			<h3 class="single_hero_h3"><?php the_excerpt()?></h3>
+        			
    			 	</div>
 				</div>
 			</div>

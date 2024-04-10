@@ -87,7 +87,6 @@
     margin-bottom: 1rem;
 }
 .ourValues_main{
-    background-image: url('../images/ourvalues_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 35rem;
@@ -312,6 +311,9 @@
   @media (max-width:640px) {
     .events_section_container{
         padding: 2rem 1rem;
+    }
+    .events_section_h1{
+        font-size: 2rem;
     }
   }
   @media (max-width:500px) {
