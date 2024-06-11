@@ -180,12 +180,14 @@
 .projects_item_img{
     position: relative;
     overflow: hidden;
-    width: 12.5rem;
+    width: 22.5rem;
     height: 12.5rem;
   
 }
 .projects_item_img img{
    height: 100%;
+   object-fit: cover;
+ 
 }
 
 .projects_item_excerpt{
@@ -217,8 +219,7 @@
 .projects_item_readmore:hover i{
     transform: translateX(0.5rem);
 }
-.projects_pagination{
-}
+
 .projects_pagination .nav-links{
     display: flex;
     gap:1rem;
@@ -293,7 +294,7 @@
  .single_hero_background_color{
     width: 100%;
     height: 100%;
-    padding: 18rem 2rem;
+    padding: 16rem 2rem;
     background-color: rgba(227, 227, 227, 0.4);
  }
  .single_hero_container{
@@ -322,7 +323,7 @@
  }
  @media (max-width:1280px){
     .single_hero_background_color{
-        padding: 15rem 2rem;
+        padding: 12rem 2rem;
     }
  }
  @media (max-width:1024px) {
@@ -330,7 +331,7 @@
         font-size: 2rem;
     }
     .single_hero_background_color{
-        padding: 10rem 2rem;
+        padding: 8rem 2rem;
     }
  }
 
