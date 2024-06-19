@@ -85,7 +85,7 @@
                         <p class="partners_item_p"><?php echo get_theme_mod('partner1Text')?></p>
                     </div>
                     <div  class="partners_section_item_flex2">
-                        <a href="<?php echo get_theme_mod('partner1Url')?>"><span><?php echo get_theme_mod('goToWebsite')?></span> <i class="fa-solid fa-caret-right"></i></a>
+                        <a href="<?php echo get_theme_mod('partner1Url')?>" target="_blank"><span><?php echo get_theme_mod('goToWebsite')?></span> <i class="fa-solid fa-caret-right"></i></a>
                     </div>
                 </div>
                 <div class="partners_section_item">
@@ -95,7 +95,7 @@
                         <p class="partners_item_p"><?php echo get_theme_mod('partner2Text')?></p>
                     </div>
                     <div  class="partners_section_item_flex2">
-                        <a href="<?php echo get_theme_mod('partner2Url')?>"><span><?php echo get_theme_mod('goToWebsite')?></span> <i class="fa-solid fa-caret-right"></i></a>
+                        <a href="<?php echo get_theme_mod('partner2Url')?>" target="_blank"><span><?php echo get_theme_mod('goToWebsite')?></span> <i class="fa-solid fa-caret-right"></i></a>
                     </div>
                 </div>
                 <div class="partners_section_item">
@@ -105,7 +105,7 @@
                         <p class="partners_item_p"><?php echo get_theme_mod('partner3Text')?></p>
                     </div>
                     <div  class="partners_section_item_flex2">
-                        <a href="<?php echo get_theme_mod('partner3Url')?>"><span><?php echo get_theme_mod('goToWebsite')?></span> <i class="fa-solid fa-caret-right"></i></a>
+                        <a href="<?php echo get_theme_mod('partner3Url')?>" target="_blank"><span><?php echo get_theme_mod('goToWebsite')?></span> <i class="fa-solid fa-caret-right"></i></a>
                     </div>
                 </div>
 
