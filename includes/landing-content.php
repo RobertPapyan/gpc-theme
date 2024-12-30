@@ -108,12 +108,32 @@
                         <a href="<?php echo get_theme_mod('partner3Url')?>" target="_blank"><span><?php echo get_theme_mod('goToWebsite')?></span> <i class="fa-solid fa-caret-right"></i></a>
                     </div>
                 </div>
+                <div class="partners_section_item">
+                    <div class="partners_section_item_flex">
+                        <div class="partners_item_img"><img src="<?php echo get_theme_mod('partner4Logo')?>" alt=""></div>
+                        <div class="partners_item_separator"></div>
+                        <p class="partners_item_p"><?php echo get_theme_mod('partner4Text')?></p>
+                    </div>
+                    <div  class="partners_section_item_flex2">
+                        <a href="<?php echo get_theme_mod('partner4Url')?>" target="_blank"><span><?php echo get_theme_mod('goToWebsite')?></span> <i class="fa-solid fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="partners_section_item">
+                    <div class="partners_section_item_flex">
+                        <div class="partners_item_img"><img src="<?php echo get_theme_mod('partner5Logo')?>" alt=""></div>
+                        <div class="partners_item_separator"></div>
+                        <p class="partners_item_p"><?php echo get_theme_mod('partner5Text')?></p>
+                    </div>
+                    <div  class="partners_section_item_flex2">
+                        <a href="<?php echo get_theme_mod('partner5Url')?>" target="_blank"><span><?php echo get_theme_mod('goToWebsite')?></span> <i class="fa-solid fa-caret-right"></i></a>
+                    </div>
+                </div>
 
                 <div class="partners_section_item_2">
                     <div class="partners_section_logo_flex">
-                        <img src="<?php echo get_theme_mod('partner4Logo')?>" alt="">
-                        <img src="<?php echo get_theme_mod('partner5Logo')?>" alt="">
+                        <img src="<?php echo get_theme_mod('partner6Logo')?>" alt="">
+                        <img src="<?php echo get_theme_mod('partner7Logo')?>" alt="">
                     </div>
-                    <p class="partners_item_2_p"><?php echo get_theme_mod('partner4Text')?></p>
+                    <p class="partners_item_2_p"><?php echo get_theme_mod('partner67Text')?></p>
                 </div>
 </section>

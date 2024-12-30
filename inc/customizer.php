@@ -287,8 +287,30 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'partner
 	'priority'=>1
 )));
 
+
+
+$wp_customize->add_setting('partner4Text',array(
+	'default'=>__('The news team at Goris Press Club creates diverse media content covering 
+	various communities in the Syunik region. Click here to read about major events, issues, and developments in the region.')
+));
+$wp_customize->add_control('partner4Text',array(
+	'label'=>'Partner 4 text',
+	'section'=>'partnersSection',
+	'priority'=>1,
+	'type'=>'textarea'
+));
+$wp_customize->add_setting('partner4Url',array(
+	'default'=>__('#')
+));
+$wp_customize->add_control('partner4Url',array(
+	'label'=>'Partner 4 url',
+	'section'=>'partnersSection',
+	'priority'=>1,
+	'type'=>'text'
+));
+
 $wp_customize->add_setting('partner4Logo',array(
-	'default' => get_template_directory_uri()."/assets/images/USAID_logo.png"
+	'default' => get_template_directory_uri()."/assets/images/youthhouse_logo_2.png"
 ));
 $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'partner4Logo',array(
 	'label'=>'Partner 4 Logo',
@@ -296,8 +318,29 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'partner
 	'priority'=>1
 )));
 
+
+$wp_customize->add_setting('partner5Text',array(
+	'default'=>__('The news team at Goris Press Club creates diverse media content covering 
+	various communities in the Syunik region. Click here to read about major events, issues, and developments in the region.')
+));
+$wp_customize->add_control('partner5Text',array(
+	'label'=>'Partner 5 text',
+	'section'=>'partnersSection',
+	'priority'=>1,
+	'type'=>'textarea'
+));
+$wp_customize->add_setting('partner5Url',array(
+	'default'=>__('#')
+));
+$wp_customize->add_control('partner5Url',array(
+	'label'=>'Partner 5 url',
+	'section'=>'partnersSection',
+	'priority'=>1,
+	'type'=>'text'
+));
+
 $wp_customize->add_setting('partner5Logo',array(
-	'default' => get_template_directory_uri()."/assets/images/logo.png"
+	'default' => get_template_directory_uri()."/assets/images/youthhouse_logo_2.png"
 ));
 $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'partner5Logo',array(
 	'label'=>'Partner 5 Logo',
@@ -305,15 +348,33 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'partner
 	'priority'=>1
 )));
 
+$wp_customize->add_setting('partner6Logo',array(
+	'default' => get_template_directory_uri()."/assets/images/USAID_logo.png"
+));
+$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'partner6Logo',array(
+	'label'=>'Partner 6 Logo',
+	'section'=>'partnersSection',
+	'priority'=>1
+)));
 
-$wp_customize->add_setting('partner4Text',array(
+$wp_customize->add_setting('partner7Logo',array(
+	'default' => get_template_directory_uri()."/assets/images/logo.png"
+));
+$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize,'partner7Logo',array(
+	'label'=>'Partner 7 Logo',
+	'section'=>'partnersSection',
+	'priority'=>1
+)));
+
+
+$wp_customize->add_setting('partner67Text',array(
 	'default'=>__('This web-site is created by the Goris Press Club (GPC), and is made possible by the generous 
 	support of the American People through the United States Agency for International Development (USAID). The contents of 
 	this web-site are the sole responsibility of Goris Press Club and do not necessarily reflect the views of USAID or the 
 	United States Government.')
 ));
-$wp_customize->add_control('partner4Text',array(
-	'label'=>'Partner 4 text',
+$wp_customize->add_control('partner67Text',array(
+	'label'=>'Partner 6,7 text',
 	'section'=>'partnersSection',
 	'priority'=>1,
 	'type'=>'textarea'
