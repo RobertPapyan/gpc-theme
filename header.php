@@ -42,13 +42,34 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
-		<div class="header_item header_lang-switcher-container">
-			<?php
-			wp_nav_menu(array(
-				'menu'=>'lang-switcher-arm',
-				'menu_class'=>'lang-switcher'
-			));
-			?>
+		<div class="header_item header_buttons ">
+            <?php $search_path = get_template_directory().'/assets/images/icons/search.svg'; ?>
+            <?php $x_path = get_template_directory().'/assets/images/icons/x.svg'; ?>
+            <div class="header_search-button">
+                <div class="glass_icon">
+                    <?php if(file_exists($search_path)) {
+                        echo file_get_contents($search_path);
+                    } ?>
+                </div>
+                <div class="x_icon">
+                    <?php if(file_exists($x_path)) {
+                        echo file_get_contents($x_path);
+                    }?>
+                </div>
+            </div>
+            <div class="header_lang-switcher-container">
+                <?php
+                wp_nav_menu(array(
+                    'menu'=>'lang-switcher-arm',
+                    'menu_class'=>'lang-switcher'
+                ));
+                ?>
+            </div>
+
+            <div class="header_item header_menubuttons">
+                <button id="header_menu_burger"><i class="fa-solid fa-bars"></i></button>
+                <button id="header_menu_x"><i class="fa-solid fa-x"></i></button>
+            </div>
 		</div>
 		<nav class="header_mobile_nav" id="header_mobile_nav">
 		<?php
@@ -69,9 +90,10 @@
 			?>
 		</div>
 		</nav>
-		<div class="header_item header_menubuttons">
-			<button id="header_menu_burger"><i class="fa-solid fa-bars"></i></button>
-			<button id="header_menu_x"><i class="fa-solid fa-x"></i></button>
+
 		</div>
-		</div>
+
 	</header><!-- #masthead -->
+    <div class="header_searchform_container">
+        <?php get_search_form();?>
+    </div>

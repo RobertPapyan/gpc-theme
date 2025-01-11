@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying search results pages
+ * The template for displaying archive pages
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package gpc
  */
@@ -10,44 +10,65 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+    <main id="primary" class="site-main">
+        <?php
+        $search_query = get_search_query();
+        ?>
+        <?php if (have_posts()): ?>
 
-		<?php if ( have_posts() ) : ?>
+            <div class="projects_title_container">
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'gpc' ), '<span>' . get_search_query() . '</span>' );
-					?>
-				</h1>
-			</header><!-- .page-header -->
+                <h1 class="search_title">
+                    <?php echo lang("Որոնում ՝ ","Search : "); ?>
+                    <span> <?php echo $search_query ?> </span>
+                </h1>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+            </div>
+            <div class="projects_items_container">
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+                <?php
+                while (have_posts()):
+                    the_post();
+                    ?>
+                    <div class="projects_item">
+                        <h3 class="projects_item_title"><?php the_title(); ?></h3>
+                        <div class="projects_item_flex">
+                            <div class="projects_item_img"><?php the_post_thumbnail(); ?></div>
+                            <div class="projects_item_excerpt">
+                                <p><?php the_excerpt(); ?></p>
+                            </div>
+                        </div>
+                        <div class="projects_item_flex2">
+                            <a href="<?php the_permalink(); ?>"
+                               class="projects_item_readmore"><span><?php echo get_theme_mod('readMoreButton') ?></span> <i
+                                        class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                    </div>
 
-			endwhile;
+                <?php endwhile; ?>
+                <div class="projects_pagination">
+                    <?php the_posts_pagination(
+                        array(
+                            'mid_size' =>10,
+                            'prev_text' => __('<', 'textdomain'),
+                            'next_text' => __('>', 'textdomain'),
+                        )
+                    ); ?>
+                </div>
+            </div>
 
-			the_posts_navigation();
 
-		else :
+        <?php
+        else:
+        ?>
+            <div class="not_found_container">
+                <span><?php echo lang('Արդյունք չկա ․․․ ', 'Nothing found ... '); echo $search_query?> </span>
+            </div>
 
-			get_template_part( 'template-parts/content', 'none' );
+        <?php endif; ?>
 
-		endif;
-		?>
-
-	</main><!-- #main -->
+    </main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();

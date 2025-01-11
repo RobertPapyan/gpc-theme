@@ -12,9 +12,9 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<div class="not_found_container"> 
-				<span>404 Page not found</span>
-		</div>
+        <div class="not_found_container">
+            <span><?php echo lang('Արդյունք չկա ․․․', 'Nothing found ...') ?></span>
+        </div>
 
 	</main><!-- #main -->
 

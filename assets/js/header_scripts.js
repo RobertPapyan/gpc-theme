@@ -41,9 +41,30 @@ menuOpen.addEventListener('click',()=>{
     mobileNav.style.transform = 'translateY(8rem)';
    
 })
-
-menuClose.addEventListener('click',()=>{
+document.addEventListener('click',(event)=>{
+    if(mobileNav.contains(event.target) || event.target == menuOpen || menuOpen.contains(event.target))return;
     menuClose.style.display = 'none';
-    menuOpen.style.display = 'block';
+    menuOpen.style.display = 'flex';
     mobileNav.style.transform = 'translateY(-50rem)';
+})
+
+document.querySelector('.header_search-button').addEventListener('click',()=>{
+    const searchButton = document.querySelector('.header_search-button')
+    const searchForm = document.querySelector('.header_searchform_container');
+    searchButton.classList.toggle('active')
+    if(searchButton.classList.contains('active')){
+        searchForm.classList.add('active')
+        document.querySelector(".header_searchform_container.active > form > label > input").focus()
+    }else{
+        searchForm.classList.remove('active')
+    }
+
+})
+document.addEventListener('click',(event)=>{
+    const searchButton = document.querySelector('.header_search-button')
+    const searchForm = document.querySelector('.header_searchform_container');
+
+    if(searchForm.contains(event.target) || event.target == searchButton || searchButton.contains(event.target))return;
+    searchForm.classList.remove('active')
+    searchButton.classList.remove('active')
 })

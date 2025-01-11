@@ -188,3 +188,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function lang($textArm, $textEng) {
+    $current_language = apply_filters('wpml_current_language', null);
+
+    if ($current_language === 'hy') {
+        return $textArm;
+    }
+
+    return $textEng;
+}
